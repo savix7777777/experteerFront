@@ -1,0 +1,48 @@
+@mixin display-large {
+  font-size: var(--display-size-large);
+  font-weight: var(--display-weight-large);
+  line-height: var(--display-height-large);
+}
+
+@mixin display-medium {
+  font-size: var(--display-size-medium);
+  font-weight: var(--display-weight-medium);
+  line-height: var(--display-height-medium);
+}
+
+@mixin display-small {
+  font-size: var(--display-size-small);
+  font-weight: var(--display-weight-small);
+  line-height: var(--display-height-small);
+}
+
+@mixin text-large {
+  font-size: var(--text-size-large);
+  font-weight: var(--text-weight-large);
+  line-height: var(--text-height-large);
+}
+
+@mixin text-medium {
+  font-size: var(--text-size-medium);
+  font-weight: var(--text-weight-medium);
+  line-height: var(--text-height-medium);
+}
+
+@mixin text-small {
+  font-size: var(--text-size-small);
+  font-weight: var(--text-weight-small);
+  line-height: var(--text-height-small);
+}
+
+@mixin caption {
+  font-size: var(--caption-size);
+  font-weight: var(--caption-weight);
+  line-height: var(--caption-height);
+}
+
+@mixin caption-uppercase {
+  font-size: var(--caption-size-uppercase);
+  font-weight: var(--caption-weight-uppercase);
+  line-height: var(--caption-height-uppercase);
+  text-transform: uppercase;
+}
