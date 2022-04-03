@@ -4,7 +4,7 @@ import cn from 'classnames';
 
 import './Button.scss';
 
-export type ButtonProps = ComponentPropsWithoutRef<'button'>
+export type ButtonProps = ComponentPropsWithoutRef<'button'>;
 
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(
   ({ children, ...props }: ButtonProps, ref) => {
@@ -14,7 +14,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       <button
         {...otherProps}
         ref={ref}
-        type={'button'}
+        type="button"
         disabled={disabled}
         className={cn('button', className, {
           disabled,
