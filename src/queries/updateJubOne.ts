@@ -13,10 +13,7 @@ const updateJobOne = (
       }
       throw response;
     })
-    .then((result) => {
-      console.log(result);
-      sendData(result);
-    })
+    .then((result) => sendData(result))
     .catch(({ name, message }) => console.error(`Error ${name}: ${message}`));
 
 export default updateJobOne;

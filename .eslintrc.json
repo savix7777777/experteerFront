@@ -58,6 +58,7 @@
         "default-param-last": "off",
         "jsx-a11y/no-noninteractive-element-interactions": "off",
         "jsx-a11y/label-has-associated-control": "off",
+        "no-console": "off",
         "import/extensions": [
             "error",
             "never",
