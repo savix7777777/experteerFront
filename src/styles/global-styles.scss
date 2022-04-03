@@ -17,6 +17,14 @@ body {
   color: var(--color-body);
 }
 
+*::-webkit-scrollbar {
+  display: none;
+}
+
 .no-scroll {
   overflow: hidden;
+}
+
+a {
+  text-decoration: none;
 }

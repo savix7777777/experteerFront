@@ -1,0 +1,18 @@
+@import 'src/styles/mixins/typography.scss';
+
+.applied {
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  @include text-large;
+  font-weight: var(--text-weight-medium);
+  background-color: var(--color-background-light);
+  color: var(--color-icon-light) ;
+  border: 1px solid transparent;
+  border-image: linear-gradient(to right, #12b62d, #6bf55a) 1;
+  border-radius: 5px;
+  padding: 3px;
+  margin-left: 15px;
+}

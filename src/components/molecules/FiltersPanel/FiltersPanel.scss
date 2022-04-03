@@ -1,0 +1,62 @@
+@import 'src/styles/variables/devices.scss';
+
+.filters-panel {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+
+  &__input {
+    width: 100%;
+    max-width: 450px;
+    height: 60px;
+    box-shadow: 0 0 3px rgba(0,0,0,0.5);
+  }
+
+  &__submit {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: $device-xl){
+  .filters-panel {
+    align-items: center;
+    flex-direction: column;
+
+    &__input {
+      margin: 20px 0;
+    }
+
+    &__submit {
+      margin: 20px 0;
+    }
+  }
+}
+
+@media screen and (max-width: $device-md){
+  .filters-panel {
+    &__submit {
+      width: 100%;
+      max-width: 450px;
+    }
+  }
+}
+
+@media screen and (max-width: $device-sm){
+  .filters-panel {
+    margin: 0;
+
+    &__submit, &__input {
+      max-width: 350px;
+    }
+  }
+}
+
+
+@media screen and (max-width: $device-sm){
+  .filters-panel {
+    &__input, &__submit {
+      max-width: 280px;
+    }
+  }
+}

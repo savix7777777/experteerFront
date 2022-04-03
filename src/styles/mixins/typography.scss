@@ -33,16 +33,3 @@
   font-weight: var(--text-weight-small);
   line-height: var(--text-height-small);
 }
-
-@mixin caption {
-  font-size: var(--caption-size);
-  font-weight: var(--caption-weight);
-  line-height: var(--caption-height);
-}
-
-@mixin caption-uppercase {
-  font-size: var(--caption-size-uppercase);
-  font-weight: var(--caption-weight-uppercase);
-  line-height: var(--caption-height-uppercase);
-  text-transform: uppercase;
-}

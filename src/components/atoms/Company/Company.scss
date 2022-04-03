@@ -1,0 +1,13 @@
+@import 'src/styles/mixins/typography.scss';
+
+.company {
+  color: var(--color-body);
+  @include text-large;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+.company:hover {
+  text-decoration: underline;
+}

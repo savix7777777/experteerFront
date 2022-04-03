@@ -51,6 +51,12 @@
         "import/no-unresolved": "off",
         "react/require-default-props": "off",
         "react/no-unused-prop-types": "off",
+        "react/jsx-no-useless-fragment": "off",
+        "jsx-a11y/no-static-element-interactions": "off",
+        "jsx-a11y/click-events-have-key-events": "off",
+        "react/function-component-definition": "off",
+        "default-param-last": "off",
+        "jsx-a11y/no-noninteractive-element-interactions": "off",
         "jsx-a11y/label-has-associated-control": "off",
         "import/extensions": [
             "error",

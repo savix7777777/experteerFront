@@ -1,0 +1,4 @@
+export const GET_JOBS_LIST = 'GET_JOBS_LIST';
+export const CLEAR_JOBS_LIST = 'CLEAR_JOBS_LIST';
+
+export const SET_QUERY_PARAMS = 'SET_QUERY_PARAMS';
