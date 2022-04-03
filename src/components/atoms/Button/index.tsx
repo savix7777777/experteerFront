@@ -5,7 +5,7 @@ import cn from 'classnames';
 import './Button.scss';
 
 type DefaultButtonType = {
-  type?: 'button' | 'submit' | 'reset' | undefined;
+  type?: string;
 };
 
 export type ButtonProps = ComponentPropsWithoutRef<'button'> &
