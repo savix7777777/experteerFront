@@ -1,0 +1,23 @@
+@import 'src/styles/variables/devices.scss';
+
+.jobs-card-list {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 66px;
+  z-index: -3;
+}
+
+@media screen and (max-width: $device-lg){
+  .jobs-card-list {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: $device-md){
+  .jobs-card-list {
+    width: 90%;
+  }
+}

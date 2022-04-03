@@ -1,0 +1,19 @@
+@import 'src/styles/mixins/typography.scss';
+
+.location {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 20px;
+
+  &__icon {
+    color: var(--color-body);
+    margin-right: 5px;
+  }
+
+  &__text {
+    color: var(--color-body);
+    @include text-large;
+    font-weight: var(--text-weight-medium);
+  }
+}

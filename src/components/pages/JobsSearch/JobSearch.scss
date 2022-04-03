@@ -1,0 +1,65 @@
+@import 'src/styles/mixins/typography.scss';
+@import 'src/styles/variables/devices.scss';
+
+.job-search {
+  width: 60%;
+  max-width: 1200px;
+  z-index: 1;
+  position: absolute;
+  top: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  &__title{
+    font-size: var(--text-size-extraLarge) !important;
+    text-shadow: 4px -3px var(--color-text-shadow);
+  }
+
+  &__no-matches{
+    margin-top: 100px;
+    @include text-large;
+    font-size: var(--text-size-largeXL);
+    color: var(--color-body);
+  }
+}
+
+@media screen and (max-width: $device-extraSize){
+  .job-search {
+    width: 100%;
+
+    &__title {
+      font-size: var(--text-size-adaptive) !important;
+    }
+  }
+}
+
+@media screen and (max-width: $device-md){
+  .job-search {
+    top: 200px;
+
+    &__title {
+      font-size: var(--text-size-adaptiveTitle) !important;
+    }
+  }
+}
+
+@media screen and (max-width: $device-sm){
+  .job-search {
+    top: 100px;
+
+    &__title {
+      font-size: var(--text-size-largeXL) !important;
+    }
+  }
+}
+
+@media screen and (max-width: $device-smExtra){
+  .job-search {
+
+    &__title {
+      font-size: var(--text-size-largeX) !important;
+    }
+  }
+}

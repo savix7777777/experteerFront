@@ -1,0 +1,146 @@
+@import 'src/styles/mixins/typography.scss';
+@import 'src/styles/variables/devices.scss';
+
+.card {
+  width: 60%;
+  max-width: 1200px;
+  z-index: 1;
+  position: absolute;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-white);
+  box-shadow: 0 0 16px 6px rgb(0 0 0 / 30%);
+
+  &__return {
+    margin: 50px 0;
+    color: var(--color-placeholder) !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    font-size: 40px;
+    transition: 0.5s;
+
+    &-box {
+      width: 90%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+
+  &__return:hover {
+    color: var(--color-body) !important;
+  }
+
+  &__work-type {
+    left: 0;
+    bottom: -35px;
+  }
+
+  &__header-content {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  &__content {
+    width: 80%;
+  }
+
+  &__title {
+    color: var(--color-body) !important;
+    @include text-large;
+    font-size: var(--text-size-largeXL) !important;
+    font-weight: var(--text-weight-medium) !important;
+    margin: 0;
+  }
+
+  &__company {
+    margin-top: 10px !important;
+    margin-bottom: 0 !important;
+  }
+
+  &__location {
+    margin: 5px 0 !important;
+  }
+
+  &__description {
+    font-size: var(--text-size-largeX);
+    font-weight: var(--text-height-extra-small);
+    line-height: var(--text-height-extraLarge);
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+
+  &__apply, &__applied {
+    font-weight: var(--text-weight-medium) !important;
+    height: 50px !important;
+    width: 130px !important;
+
+    &-box {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 150px;
+    }
+  }
+}
+
+.apply-absolute, .applied-absolute {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+@media screen and (max-width: $device-xl){
+  .card {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: $device-md){
+  .card {
+    &__description {
+      font-size: var(--text-size-large);
+      line-height: var(--text-height-large);
+      margin-bottom: 50px;
+    }
+
+    &__apply-box, &__applied-box {
+      margin-bottom: 100px;
+    }
+
+    &__apply, &__applied {
+      font-size: var(--text-size-large) !important;
+    }
+
+    .applied-absolute, .apply-absolute {
+      top: 95px;
+    }
+  }
+}
+
+@media screen and (max-width: $device-sm) {
+  .card {
+    &__return {
+      margin: 25px 0;
+    }
+
+    &__title {
+      font-size: var(--text-size-largeX) !important;
+    }
+
+    &__applied, &__apply {
+      transform: scale(0.7);
+    }
+
+    &__applied-box, &__apply-box {
+      margin-bottom: 30px;
+    }
+  }
+}

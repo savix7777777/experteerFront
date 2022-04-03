@@ -1,0 +1,90 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "airbnb",
+        "prettier"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "plugins": ["react", "@typescript-eslint", "prettier"],
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "extensions": [".ts", ".tsx", ".js", ".jsx"],
+                "moduleDirectory": ["node_modules", "src/"]
+            }
+        }
+    },
+    "rules": {
+        "prefer-destructuring": "warn",
+        "no-use-before-define": "off",
+        "no-unused-vars": "off",
+        "no-shadow": "off",
+        "no-nested-ternary": "warn",
+        "no-param-reassign": "off",
+        "consistent-return": "off",
+        "no-redeclare": "off",
+        "no-empty-pattern": "off",
+        "no-extra-boolean-cast": "off",
+        "prettier/prettier": [
+            "error",
+            {
+                "usePrettierrc": true
+            }
+        ],
+        "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
+        "react/self-closing-comp": "off",
+        "react/prop-types": "off",
+        "react/jsx-props-no-spreading": "off",
+        "react/button-has-type": "warn",
+        "import/prefer-default-export": ["off"],
+        "import/no-unresolved": "off",
+        "react/require-default-props": "off",
+        "react/no-unused-prop-types": "off",
+        "react/jsx-no-useless-fragment": "off",
+        "jsx-a11y/no-static-element-interactions": "off",
+        "jsx-a11y/click-events-have-key-events": "off",
+        "react/function-component-definition": "off",
+        "default-param-last": "off",
+        "jsx-a11y/no-noninteractive-element-interactions": "off",
+        "jsx-a11y/label-has-associated-control": "off",
+        "import/extensions": [
+            "error",
+            "never",
+            {
+                "svg": "always",
+                "jpg": "always",
+                "png": "always",
+                "json": "always"
+            }
+        ],
+        "react/no-children-prop": "off",
+        "import/no-extraneous-dependencies": "off",
+        "no-undef": "off",
+        "no-plusplus": "off",
+        "no-return-assign": "off",
+        "no-cond-assign": "off",
+        "no-continue": "off",
+        "no-restricted-syntax": "off",
+        "no-prototype-builtins": "off",
+        "no-underscore-dangle": "off"
+    },
+    "overrides": [
+        {
+            "files": ["**/*.spec.{ts,tsx}", "**/*.test.{ts,tsx}"],
+            "env": {
+                "jest": true
+            }
+        }
+    ]
+}

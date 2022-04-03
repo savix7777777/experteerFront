@@ -1,0 +1,7 @@
+@import 'src/styles/mixins/typography.scss';
+
+.date {
+  color: var(--color-body);
+  @include text-medium;
+  margin: 0;
+}

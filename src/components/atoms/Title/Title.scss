@@ -1,0 +1,9 @@
+@import 'src/styles/variables/typography';
+@import 'src/styles/variables/index.scss';
+
+.title {
+  font-size: var(--text-size-large);
+  color: var(--color-white);
+  font-family: var(--font-family);
+  font-weight: var(--text-weight-large);
+}
