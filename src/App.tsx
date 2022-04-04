@@ -34,6 +34,10 @@ function App() {
             },
           ],
         },
+        {
+          path: '*',
+          element: <Navigate to={PATHS.JOBSLIST} />,
+        },
       ],
     },
   ]);
