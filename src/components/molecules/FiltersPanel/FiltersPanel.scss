@@ -54,8 +54,12 @@
   .filters-panel {
     margin: 0;
 
-    &__submit, &__input {
+    &__input {
       max-width: 350px;
+    }
+
+    &__submit {
+      width: 350px !important;
     }
   }
 }
