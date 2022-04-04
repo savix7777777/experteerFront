@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './JobCard.scss';
 import { IJob } from 'types';
 import {
@@ -24,6 +24,9 @@ const JobCard = ({
   type,
 }: IJob) => {
   const navigate = useNavigate();
+  useEffect(() => {
+    console.log('lol');
+  }, [navigate]);
 
   const handleNavigate = () => {
     navigate(`${PATHS.JOBSLIST}/${guid}`);

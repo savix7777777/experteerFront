@@ -13,11 +13,11 @@
   z-index: -2;
 
   &__title {
-    color: var(--color-body);
+    color: var(--color-body) !important;
     @include text-large;
-    font-size: var(--text-size-largeXL);
-    font-weight: var(--text-weight-medium);
-    margin: 0;
+    font-size: var(--text-size-largeXL) !important;
+    font-weight: var(--text-weight-medium) !important;
+    margin: 0 !important;
 
     &-box{
       display: flex;
@@ -55,16 +55,20 @@
     }
 
     &__applied {
-      margin-top: 10px;
-      margin-left: 0;
+      margin-top: 10px !important;
+      margin-left: 0 !important;
     }
+  }
+
+  .job-card:hover {
+    transform: none;
   }
 }
 
 @media screen and (max-width: $device-sm){
   .job-card {
     &__title {
-      font-size: var(--text-size-largeX);
+      font-size: var(--text-size-largeX) !important;
     }
 
     &__applied {
@@ -82,7 +86,7 @@
     }
 
     &__work-type {
-      bottom: 25px;
+      bottom: 25px !important;
     }
   }
 }

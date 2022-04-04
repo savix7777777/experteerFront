@@ -58,9 +58,7 @@ const FiltersPanel = () => {
         onChange={handleChange}
         value={searchParams?.query}
       />
-      <Button className="filters-panel__submit" type="submit">
-        Search
-      </Button>
+      <Input className="filters-panel__submit" type="submit" value="Search" />
     </form>
   );
 };

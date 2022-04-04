@@ -27,7 +27,7 @@ function App() {
             {
               path: ':id',
               element: (
-                <Suspense fallback={<Navigate to={PATHS.JOBSLIST} />}>
+                <Suspense fallback={<></>}>
                   <JobCardFull />
                 </Suspense>
               ),
