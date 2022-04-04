@@ -14,11 +14,11 @@
   }
 
   &__submit {
-    width: 150px;
+    width: 150px !important;
     transition: .5s;
     cursor: pointer;
-    color: var(--color-white);
-    background-color: var(--color-light-primary);
+    color: var(--color-white) !important;
+    background-color: var(--color-light-primary) !important;
   }
 
   &__submit:hover {
